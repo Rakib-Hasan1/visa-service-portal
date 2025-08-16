@@ -1,12 +1,74 @@
-# React + Vite
+# Visa Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application that provides users with visa-related services and free online consultation. Built with React, Tailwind CSS, and Ant Design for a smooth and responsive user experience.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+[Live Demo : ](https://visa-services-portal.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Features
+
+- **Visa Services Listing**: Browse through multiple visa categories with detailed service information.  
+- **Search & Filter**: Easily filter services by category or search by service name.  
+- **Service Details Page**: View detailed information about each visa service and apply directly.  
+- **My Applications**: Track your submitted applications stored in localStorage.  
+- **Online Consultation Form**: Request free personalized consultation with selectable visa type and visa-for options.  
+- **Responsive Design**: Fully responsive layout for mobile, tablet, and desktop.  
+
+---
+
+## 💻 Setup Instructions
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/visa-portal.git
+cd visa-portal
+
+npm install
+
+npm run dev
+
+npm run build
+
+Open the application
+
+Development: http://localhost:3000
+
+Production: Serve the /build folder using any static server.
+
+📝 Technologies Used
+
+Frontend: React, React-Router, Tailwind CSS, Ant Design
+
+Routing: React Router v6
+
+State Management: React useState & useEffect
+
+
+visa-portal/
+├─ public/
+├─ src/
+│  ├─ assets/        # Images & icons
+│  ├─ components/    # Reusable components
+│  ├─ pages/         # Pages like Home, Services, ServiceDetails, Consultation
+│  ├─ App.jsx
+│  └─ index.js
+├─ package.json
+└─ README.md
+
+🔖 Author
+
+MD Rakib Hasan
+Frontend Developer | React Enthusiast
+
+
+---
+
+
+
+
