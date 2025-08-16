@@ -34,7 +34,7 @@ const VisaServicePage = () => {
 
     return (
         <div className="max-w-6xl mx-auto px-4 py-10 fira-sans">
-            <h1 className="text-3xl font-bold text-center mb-6">
+            <h1 className="text-3xl font-bold text-center mb-6 text-[#1C6EA4]">
                 Visa Services
             </h1>
             <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mb-8">
@@ -42,7 +42,7 @@ const VisaServicePage = () => {
                 <select
                     value={selectedCategory}
                     onChange={e => setSelectedCategory(e.target.value)}
-                    className="border border-gray-300 rounded-lg px-4 py-2 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                    className="border border-gray-300 rounded-lg px-4 py-2 bg-gray-100 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
                 >
                     <option value="">All Categories</option>
                     {services.map(cat => (
@@ -58,7 +58,7 @@ const VisaServicePage = () => {
                     value={searchText}
                     onChange={e => setSearchText(e.target.value)}
                     placeholder="Search service..."
-                    className="border border-gray-300 rounded-full px-5 py-2 w-full lg:w-80 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                    className="border border-gray-300 bg-gray-100 rounded-full px-5 py-2 w-full lg:w-80 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
                 />
             </div>
 
@@ -66,7 +66,7 @@ const VisaServicePage = () => {
                 filteredServices.map(service => (
                     <div key={service.category} className="mb-12">
                         {/* Category Name */}
-                        <h2 className="text-2xl font-semibold text-center mb-6">
+                        <h2 className="text-2xl font-semibold text-center mb-6 text-[#1C6EA4]">
                             {service.category}
                         </h2>
 
@@ -80,7 +80,7 @@ const VisaServicePage = () => {
                                     >
 
                                         <img src={s.image} className='w-full h-50 object-cover rounded-md mb-2' alt="service_image" />
-                                        <h3 className="text-xl font-bold mb-2">{s.title}</h3>
+                                        <h3 className="text-xl font-bold mb-2 text-[#1C6EA4]">{s.title}</h3>
                                         <p className="text-gray-600">Processing Time: {s.processingTime}</p>
                                         <p className="text-gray-800 font-semibold mt-2">Price: {s.price}</p>
 
@@ -91,7 +91,7 @@ const VisaServicePage = () => {
                     </div>
                 ))
             ) : (
-                <h2 className='text-center text-gray-500'>No Category Found</h2>
+                <h2 className='text-center text-gray-500 text-xl'>No Category Found</h2>
             )}
         </div>
     );
