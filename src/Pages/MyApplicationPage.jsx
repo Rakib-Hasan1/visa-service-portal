@@ -46,7 +46,7 @@ const MyApplicationPage = () => {
       <h1 className="text-3xl font-bold mb-6 text-center text-[#1C6EA4]">My Applications</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {applications.map((app) => (
-          <Card key={app.id} className="">
+          <Card key={app.id} className="hover:scale-105 transition">
             <h3 className="font-bold text-2xl pb-3 text-[#1C6EA4]">{app.title}</h3>
             <p className="text-lg"><strong>Name:</strong> {app.name || "Not added"}</p>
             <p className="text-lg"><strong>Passport No:</strong> {app.passportNo || "Not added"}</p>

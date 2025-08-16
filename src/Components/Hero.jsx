@@ -10,7 +10,7 @@ const Hero = () => {
             <div className='relative'>
                 <img src={banner} className='w-full h-[70vh] object-cover object-right brightness-75' alt="banner" />
             </div>
-            <div className='absolute inset-0 flex flex-col items-start justify-center text-white text-left px-5'>
+            <div className='absolute inset-0 flex flex-col items-start justify-center text-white text-left pl-4 md:pl-8 lg:pl-16'>
                 <p className='font-bold text-4xl mb-4'>Your Gateway to Global Opportunities</p>
                 <p className="text-2xl font-bold">Fast, reliable, and hassle-free visa application services.</p>
                 <Link to={"/services"}>

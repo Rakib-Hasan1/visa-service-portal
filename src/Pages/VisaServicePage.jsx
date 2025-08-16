@@ -76,7 +76,7 @@ const VisaServicePage = () => {
                                 <Link to={`/service/${s.id}`} key={s.id}>
                                     <div
 
-                                        className="bg-gray-100 rounded-md p-6 text-center hover:shadow-md transition duration-300"
+                                        className="bg-gray-100 rounded-md p-6 text-center hover:shadow-md hover:scale-105 transition duration-300"
                                     >
 
                                         <img src={s.image} className='w-full h-50 object-cover rounded-md mb-2' alt="service_image" />

@@ -1,4 +1,3 @@
-import React from "react";
 import { Menu } from "antd";
 import { Link, NavLink, useLocation } from "react-router";
 
@@ -16,12 +15,12 @@ const Navbar = () => {
     },
     {
       label: <NavLink to="/my-application">Application</NavLink>,
-      key: "/application",
+      key: "/my-application",
     },
   ];
 
   return (
-    <div className="shadow-md bg-white dark:bg-gray-900 sticky top-0 z-50">
+    <div className="shadow-md bg-white dark:bg-gray-900 sticky top-0 z-50 px-2">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-14 fira-sans">
         {/* Logo */}
         <Link to={"/"} ><h1 className="text-2xl font-bold text-blue-600">Visa Portal</h1></Link>
