@@ -1,6 +1,6 @@
 import { Button, message } from 'antd';
 import React, { useEffect, useState } from 'react';
-import { Navigate, useNavigate, useParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 
 const ServiceDetails = () => {
     const [service, setService] = useState(null);
@@ -53,7 +53,6 @@ const ServiceDetails = () => {
                 <div>
                     <h1 className="text-3xl font-bold text-[#1C6EA4] mb-4">{service?.title}</h1>
                     <p className="text-gray-700 mb-4">{service?.description}</p>
-                    <p className="text-gray-600 mb-2"><strong>Category:</strong> {service?.category}</p>
                     <p className="text-gray-600 mb-2"><strong>Processing Time:</strong> {service?.processingTime}</p>
                     <p className="text-gray-800 font-semibold mb-6"><strong>Price:</strong> {service?.price}</p>
 
@@ -61,7 +60,7 @@ const ServiceDetails = () => {
                     {/* Apply Button */}
                     <>
                         {contextHolder}
-                        <Button warning
+                        <Button
                             onClick={handleApply}
                             className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition duration-300"
                         >
