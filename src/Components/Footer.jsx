@@ -13,7 +13,7 @@ const Footer = () => {
                 <nav className="flex gap-6 mb-4 md:mb-0">
                     <Link to="/" className="hover:text-blue-600">Home</Link>
                     <Link to="/services" className="hover:text-blue-600">Services</Link>
-                    <Link to="/application" className="hover:text-blue-600">Application</Link>
+                    <Link to="/my-application" className="hover:text-blue-600">Application</Link>
                 </nav>
 
                 {/* Right: Social Links */}
